@@ -35,3 +35,45 @@ footer{
     grid-area: footer;
     background-color: var(--bs-header-bg);
 }
+
+@media (max-width: 576px){
+    body{
+        display: grid;
+        grid-template-columns: 100dvw;
+        grid-template-rows: 12vh auto 10vh;
+        grid-template-areas: "header"
+                         "content"
+                         "footer";
+    }
+
+    header.m-4{
+        margin: 0 !important;
+        border-radius:0 !important;
+    }
+    
+    div#bar{
+        grid-area:auto;
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    body{
+        display: grid;
+        grid-template-columns: 100dvw;
+        grid-template-rows: 12vh auto 10vh;
+        grid-template-areas: "header"
+                         "content"
+                         "footer";
+    }
+
+    header.m-4{
+        margin: 0 !important;
+        border-radius:0 !important;
+    }
+    
+    div#bar{
+        grid-area:auto;
+        display: none;
+    }
+}
