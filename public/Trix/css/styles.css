@@ -77,3 +77,24 @@ footer{
         display: none;
     }
 }
+
+@media (min-width: 768px) and (max-width: 992px){
+    body{
+        display: grid;
+        grid-template-columns: 100dvw;
+        grid-template-rows: 12vh auto 10vh;
+        grid-template-areas: "header"
+                         "content"
+                         "footer";
+    }
+
+    header.m-4{
+        margin: 0 !important;
+        border-radius:0 !important;
+    }
+    
+    div#bar{
+        grid-area:auto;
+        display: none;
+    }
+}
