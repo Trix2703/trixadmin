@@ -1,0 +1,37 @@
+* {
+    transition: all 1s;
+}
+
+[data-bs-theme=light]{
+    --bs-body-bg: var(--bs-light);
+    --bs-header-bg: #00000096;
+}
+
+[data-bs-theme=dark]{
+    --bs-header-bg: #ffffff96;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 12vh auto 10vh;
+    grid-template-areas: "bar header"
+                         "bar content"
+                         "footer footer";
+}
+
+
+header{
+    grid-area: header;
+    background-color: var(--bs-header-bg);
+}
+
+div#bar{
+    grid-area:bar;
+    background-color: var(--bs-header-bg);
+}
+
+footer{
+    grid-area: footer;
+    background-color: var(--bs-header-bg);
+}
