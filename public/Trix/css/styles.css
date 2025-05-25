@@ -5,24 +5,14 @@
 [data-bs-theme=light]{
     --bs-body-bg: var(--bs-light);
     --bs-header-bg: #00000096;
+    --bs-heading-color: var(--bs-white);
 }
 
 [data-bs-theme=dark]{
     --bs-header-bg: #ffffff96;
-}
-
-
-header{
-    height: 100px;
-    background-color: var(--bs-header-bg);
-}
-
-div#barc{
-    height: 100px;
-    background-color: var(--bs-header-bg);
+  
 }
 
 footer{
-    height: 100px;
     background-color: var(--bs-header-bg);
 }

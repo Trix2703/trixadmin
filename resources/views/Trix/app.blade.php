@@ -14,7 +14,20 @@
 </head>
 <body class="container-fluid vh-100 vw-100 m-0 p-0">
     <div class="row h-100 w-100 m-0">
-        <div class="d-none d-lg-block col-lg-3 col-xxl-2 nav" style="background-color: yellowgreen"></div>
+        <div class="d-none d-lg-block col-lg-3 col-xxl-2 container p-0">
+            <div class="h-100 d-grid m-0" style="grid-template-rows: max-content 1fr max-content; grid-template-columns: auto">
+                <header class="col" style="background-color: var(--bs-header-bg);">
+                    @include("Trix.header")
+                </header>
+
+                <div class="col flex-grow-1" id="nav-bar" style="background-color: var(--bs-header-bg)"></div>
+
+                <footer class="col">
+                    @include("Trix.footer")
+                </footer>
+            </div>
+        </div>
+
         <div class="col content"></div>
     </div>
 </body>
