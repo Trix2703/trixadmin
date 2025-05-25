@@ -12,15 +12,10 @@
     <script src="{{asset("Trix/js/bootstrap.min.js")}}"></script>
     <title></title>
 </head>
-<body class="vh-100">
-    <header class=" m-4 rounded-3">
-        @include('Trix.header')
-    </header>
-    <div class="mt-4 mb-4 rounded-end-3" id="bar">
-
+<body class="container-fluid vh-100 vw-100 m-0 p-0">
+    <div class="row h-100 w-100 m-0">
+        <div class="d-none d-lg-block col-lg-3 col-xxl-2 nav" style="background-color: yellowgreen"></div>
+        <div class="col content"></div>
     </div>
-    <footer>
-        @include('Trix.footer')
-    </footer>
 </body>
 </html>
