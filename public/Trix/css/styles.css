@@ -5,96 +5,15 @@
 [data-bs-theme=light]{
     --bs-body-bg: var(--bs-light);
     --bs-header-bg: #00000096;
+    --bs-heading-color: var(--bs-white);
+    --bs-content-bg: rgb(255, 255, 255);
 }
 
 [data-bs-theme=dark]{
     --bs-header-bg: #ffffff96;
-}
-
-body{
-    display: grid;
-    grid-template-columns: 20vw 80vw;
-    grid-template-rows: 12vh auto 10vh;
-    grid-template-areas: "bar header"
-                         "bar content"
-                         "footer footer";
-}
-
-
-header{
-    grid-area: header;
-    background-color: var(--bs-header-bg);
-}
-
-div#bar{
-    grid-area:bar;
-    background-color: var(--bs-header-bg);
+  
 }
 
 footer{
-    grid-area: footer;
     background-color: var(--bs-header-bg);
-}
-
-@media (max-width: 576px){
-    body{
-        display: grid;
-        grid-template-columns: 100dvw;
-        grid-template-rows: 12vh auto 10vh;
-        grid-template-areas: "header"
-                         "content"
-                         "footer";
-    }
-
-    header.m-4{
-        margin: 0 !important;
-        border-radius:0 !important;
-    }
-    
-    div#bar{
-        grid-area:auto;
-        display: none;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 768px){
-    body{
-        display: grid;
-        grid-template-columns: 100dvw;
-        grid-template-rows: 12vh auto 10vh;
-        grid-template-areas: "header"
-                         "content"
-                         "footer";
-    }
-
-    header.m-4{
-        margin: 0 !important;
-        border-radius:0 !important;
-    }
-    
-    div#bar{
-        grid-area:auto;
-        display: none;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px){
-    body{
-        display: grid;
-        grid-template-columns: 100dvw;
-        grid-template-rows: 12vh auto 10vh;
-        grid-template-areas: "header"
-                         "content"
-                         "footer";
-    }
-
-    header.m-4{
-        margin: 0 !important;
-        border-radius:0 !important;
-    }
-    
-    div#bar{
-        grid-area:auto;
-        display: none;
-    }
 }
